@@ -3,14 +3,14 @@ import 'package:flutter_sixvalley_ecommerce/localization/models/language_model.d
 import 'package:flutter_sixvalley_ecommerce/utill/images.dart';
 
 class AppConstants {
-  static const String appName = '6valley';
+  static const String appName = 'Tarkwamall';
   static const String slogan = 'E-Commerce Marketplace';
   static const String appVersion = '15.4'; ///Flutter SDK 3.32.8
   static const LocalCachesTypeEnum cachesType = LocalCachesTypeEnum.all;
 
-  static const String baseUrl = 'YOUR_BASE_URL_HERE';
+  static const String baseUrl = 'https://www.tarkwamall.store';
 
-  static const String googleServerClientId = 'client_id here';
+  static const String googleServerClientId = '999499743629-4h9t91istfdfevgj83vs2n2rurj4msl0.apps.googleusercontent.com';
   static const String userId = 'userId';
   static const String name = 'name';
   static const String categoriesUri = '/api/v1/categories';

@@ -6,8 +6,6 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -34,9 +32,8 @@
     </queries>
 
     <application
-        android:label="6Valley"
+        android:label="Tarkwamall"
         android:name="${applicationName}"
-        android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:extractNativeLibs="true"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -44,7 +41,7 @@
         android:allowBackup="false"
         android:fullBackupContent="false">
 
-        <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR_MAP_KEY_HERE" />
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyD-a9BkFIfhO08nnxowumT9fUxVHPuMR30" />
 
         <activity
             android:name=".MainActivity"

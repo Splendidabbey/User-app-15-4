@@ -65,24 +65,22 @@ Future<void> main() async {
   HttpOverrides.global = MyHttpOverrides();
   WidgetsFlutterBinding.ensureInitialized();
 
-  if(Firebase.apps.isEmpty) {
-    if(Platform.isAndroid) {
-      try{
-        ///todo you need to configure that firebase Option with your own firebase to run your app
-        await Firebase.initializeApp(
-          options: const FirebaseOptions(
-            apiKey: "current_key here",
-            projectId: "project_id here",
-            messagingSenderId: "project_number here",
-            appId: "mobilesdk_app_id here"
-        ));
-      }finally{
-        await Firebase.initializeApp();
-      }
-    }else{
-      await Firebase.initializeApp();
+if (Firebase.apps.isEmpty) {
+  if (Platform.isAndroid) {
+    try {
+      await Firebase.initializeApp(
+        options: const FirebaseOptions(
+          apiKey: "AIzaSyC5D4FW6WJBzUWxY7940_Cxgh6dx5KQ_KI",
+          projectId: "tarkwamall-2bb2d",
+          messagingSenderId: "999499743629",
+          appId: "1:999499743629:android:eb0c960ee2f9ed4067bdc4",
+        ),
+      );
+    } on FirebaseException catch (e) {
+      if (e.code != 'duplicate-app') rethrow;
     }
   }
+}
   await FlutterDownloader.initialize(debug: true, ignoreSsl: true);
   await di.init();
 
